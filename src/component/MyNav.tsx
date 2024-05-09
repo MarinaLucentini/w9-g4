@@ -5,13 +5,7 @@ const MyNav = ()=>{
 <Navbar className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
-            <img
-              src="/img/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
+          EpiBlog
           </Navbar.Brand>
         </Container>
       </Navbar>

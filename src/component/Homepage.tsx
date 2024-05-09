@@ -32,25 +32,16 @@ try{
         </Col>
       </Row>
       <Row className="justify-content-center">
-      <Col xs={12} md={6} className="text-center">
-        {/* {articles && (
-            articles.map((article)=> 
-
-
-                (
-                    <SingleArticle article={article} key={article.id} />
-                )
-            )
-        )
+    
+        { articles.length> 0 && articles.map((article)=>
+     
+(<SingleArticle article={article} key={article.id}/>)
             
-        } */}
-        {articles.map((article)=>(
-            <SingleArticle article={article} key={article.id}/>
-        ))
+        
+        )
            
         }
  
-        </Col>
       </Row>
     </Container>
         </>

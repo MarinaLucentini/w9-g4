@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap"
+import { Card, Col } from "react-bootstrap"
 import { IArticle } from "../interface/IArticle"
 
 interface SingleArticle {
@@ -8,8 +8,7 @@ interface SingleArticle {
 
 const SingleArticle = (props: SingleArticle)=>{
     return (
-       
-           
+        <Col xs={12} md={4} className="text-center"> 
           <Card>
         <Card.Img variant="top" src={props.article.image_url} />
         <Card.Body>
@@ -17,8 +16,7 @@ const SingleArticle = (props: SingleArticle)=>{
           <Card.Text>{props.article.summary}</Card.Text>
         </Card.Body>
       </Card>
-     
-          
+     </Col>
     )
 }
 
