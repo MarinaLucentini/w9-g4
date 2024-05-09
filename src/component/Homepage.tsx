@@ -30,14 +30,16 @@ try{
         <Col xs={12} md={6} className="text-center">
           <h2>Articoli del blog</h2>
         </Col>  
+     <Col xs={1} md={4} className="text-center">
         { articles.length> 0 && articles.map((article)=>
      
 (<SingleArticle article={article} key={article.id}/>)
-            
+
         
         )
            
         }
+        </Col>
 </Row>
     
     </Container>
