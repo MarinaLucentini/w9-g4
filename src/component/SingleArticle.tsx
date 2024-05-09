@@ -1,12 +1,12 @@
 import { Card, Col } from "react-bootstrap"
 import { IArticle } from "../interface/IArticle"
 
-interface SingleArticle {
+interface ISingleArticle {
     article: IArticle
 }
 
 
-const SingleArticle = (props: SingleArticle)=>{
+const SingleArticle = (props: ISingleArticle)=>{
     return (
         <Col xs={12} md={4} className="text-center"> 
           <Card>

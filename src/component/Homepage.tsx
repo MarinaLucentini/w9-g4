@@ -11,7 +11,7 @@ try{
     const resp = await fetch("https://api.spaceflightnewsapi.net/v4/articles");
       if (resp.ok) {
         const arrOfArticle = await resp.json();
-        setArticles(arrOfArticle);
+        setArticles(arrOfArticle.results);
       } else {
         throw new Error("Errore nel reperire gli articoli");
       }
@@ -29,10 +29,7 @@ try{
       <Row className="justify-content-center">
         <Col xs={12} md={6} className="text-center">
           <h2>Articoli del blog</h2>
-        </Col>
-      </Row>
-      <Row className="justify-content-center">
-    
+        </Col>  
         { articles.length> 0 && articles.map((article)=>
      
 (<SingleArticle article={article} key={article.id}/>)
@@ -41,8 +38,8 @@ try{
         )
            
         }
- 
-      </Row>
+</Row>
+    
     </Container>
         </>
     )
